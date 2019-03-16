@@ -9,15 +9,15 @@ public class Main implements Runnable{
         int[] a = new int[n];
         int[] p = new int[n];
         int height = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { //заполняем первоначальный массив родителей
             a[i] = scanner.nextInt();
         }
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { // далее создаем массив из детей (дети в индексах) со списками родителей в ячейках
             int t = i;
             while(a[t]!=-1) {
                 p[i]++;
                 if (p[i]>height) {
-                    height=p[i];
+                    height=p[i]; //запоминаем максимально длинный список родителей
                 }
                 t=a[t];
             }
