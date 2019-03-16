@@ -34,9 +34,6 @@ public class Main implements Runnable{
     }
 
     public static void main(String[] args) {
-//        long startTime = System.currentTimeMillis();
         new Main().run();
-//        long finishTime = System.currentTimeMillis();
-//        System.out.println(finishTime - startTime + " ms");
     }
 }
