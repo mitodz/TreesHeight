@@ -7,13 +7,10 @@ public class Main implements Runnable{
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] a = new int[n];
-        int[] p = new int[n];
-        int height = 0;
         for (int i = 0; i < n; i++) { //заполняем первоначальный массив родителей
             a[i] = scanner.nextInt();
         }
-        height = getHeight(a);
-        System.out.println(height + 1);
+        System.out.println(getHeight(a) + 1);
     }
 
     private static int getHeight(int[] a) {
